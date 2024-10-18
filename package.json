@@ -1,0 +1,17 @@
+{
+  "name": "parcial2_pw_ej_1_ssr",
+  "version": "1.0.0",
+  "description": "Repositorio para ejercicio 1 del parcial 2 de PW utilizando Express.js implementando Server-Side Renedering",
+  "main": "index.js",
+  "tipe": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "pug": "^3.0.3"
+  }
+}

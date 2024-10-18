@@ -1,0 +1,15 @@
+
+doctype html
+html
+  head
+    title Confirmación
+  style  
+    include ../styles/confirmation.css
+
+  body
+    div#container
+      h1 Confirmación de usuario
+      p Nombre: #{user.name}
+      p Edad: #{user.age}
+      p Email: #{user.email}
+      a(href="/form") Regresar al formulario

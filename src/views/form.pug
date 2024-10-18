@@ -1,0 +1,29 @@
+head
+  title Informacion usuario
+  style 
+    include ../styles/form.css
+body
+  div.container
+    a(href="/")
+    
+    form(action="/submit" method="POST") Complete los datos del formulario
+      div#first
+        label(for="name") Nombre:
+        input(type="text" id="name" name="name" placeholder="Tu nombre" value=(name || '') required)
+
+        if errors && errors.find(err => err.includes('nombre'))
+          span.error= errors.find(err => err.includes('nombre'))
+      div
+        label(for="lastname") Edad:
+        input(type="text" id="age" name="age" placeholder="Tu edad" value=(age || '') min="1" required)
+
+        if errors && errors.find(err => err.includes('edad'))
+          span.error= errors.find(err => err.includes('edad'))
+      div
+        label(for="email") Email:
+        input(type="email" id="email" name="email" placeholder="Tu email" value=(email || '') required)
+
+        if errors && errors.find(err => err.includes('correo'))
+          span.error= errors.find(err => err.includes('correo'))
+      div
+        button(type="submit" ) Enviar
