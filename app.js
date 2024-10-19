@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 // Usamos las rutas de usuario
 app.use(userRoute);
 // Configuración del puerto
-const PORT = 3000;
+const PORT = 3001;
 // Iniciamos el servidor
 app.listen(PORT, () => {
 console.log(`Server is running on port ${PORT}`);

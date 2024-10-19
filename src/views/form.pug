@@ -6,11 +6,11 @@ body
   div.container
     a(href="/")
     
-    form(action="/submit" method="POST") Complete los datos del formulario
+    form(action="/submit" method="POST")
+      div#title-form Complete los datos del formulario
       div#first
         label(for="name") Nombre:
         input(type="text" id="name" name="name" placeholder="Tu nombre" value=(name || '') required)
-
         if errors && errors.find(err => err.includes('nombre'))
           span.error= errors.find(err => err.includes('nombre'))
       div
